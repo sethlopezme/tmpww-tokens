@@ -1,0 +1,155 @@
+<div id="conteinerForSearchResults">
+    <table class="tableSearchResults">
+        <caption class="wai-aria">List of search results for developer.</caption>
+        <tbody>
+            <tr>
+                <input type="hidden" runat="server/" value="filter by job title" id="hdnFilterTitle">
+                <input type="hidden" runat="server/" value="filter by job location" id="hdnFilterLocation">
+                <input type="hidden" value="asc" id="hdnTitleSortDirection">
+                <input type="hidden" value="asc" id="hdnLocationSortDirection">
+                <input type="hidden" value="41" id="hdnSearchResultCount">
+                <input type="hidden" value="" id="hdnmaximumSearchResult">
+                <th id="searchth1" class="thJobTitle">Job Title</th>
+                <th id="searchth2" class="thLocations">Location</th>
+                <th id="searchth5" class="thLast"></th>
+            </tr>
+            <tr class="trFilterResults">
+                <td headers="searchth1" class="td1">
+                    <label class="wai-aria" for="jobTitleKeyword">Job Title</label>
+                    <input type="text" onkeydown="if(event.which || event.keyCode){if ((event.which == 13) || (event.keyCode == 13)) {filterResultsEvent=true;OnGo('http://jobsattmp.com/searches.aspx?keyword=developer','True','False');return false;}}" onblur="if(this.value == ''){this.value = 'filter by job title';}" onfocus="if(this.value == 'filter by job title'){this.value = '';}" maxlength="200" value="filter by job title" id="jobTitleKeyword">
+                </td>
+                <td headers="searchth2" class="td2">
+                    <label class="wai-aria" for="locationsKeyword">Location</label>
+                    <input type="text" onkeydown="if(event.which || event.keyCode){if ((event.which == 13) || (event.keyCode == 13)) {filterResultsEvent=true;OnGo('http://jobsattmp.com/searches.aspx?keyword=developer','True','False');return false;}}" onblur="if(this.value == ''){this.value = 'filter by job location';}" onfocus="if(this.value == 'filter by job location'){this.value = '';}" maxlength="200" value="filter by job location" id="locationsKeyword">
+                </td>
+                <td headers="searchth5" class="td4"><a href="javascript:OnGo('http://jobsattmp.com/searches.aspx?keyword=developer', 'True', 'False');" onclick="filterResultsEvent=true;" id="btGo">Go</a><a href="javascript:Reset('http://jobsattmp.com/searches.aspx?keyword=developer', 'True', 'False');" id="btReset">Reset</a>
+                </td>
+            </tr>
+            <tr>
+                <td headers="searchth1" class="td1"><a href="http://jobsattmp.com/new-york-state/it/jobid3735060-software-engineer_application-developer-.net-jobs" id="search_result_link_1">Software EngineerApplication Developer .Net</a>
+                </td>
+                <td headers="searchth2" class="td2">New York, New York</td>
+                <td headers="searchth5" class="td4"></td>
+            </tr>
+            <tr class="alt">
+                <td headers="searchth1" class="td1"><a href="http://jobsattmp.com/sg/singapore/business-development/jobid2526231-director-new-business-development-&ndash;-asia-pacific-region-jobs" id="search_result_link_2">Director New Business Development &ndash; Asia Pacific Region</a>
+                </td>
+                <td headers="searchth2" class="td2">Singapore</td>
+                <td headers="searchth5" class="td4"></td>
+            </tr>
+            <tr>
+                <td headers="searchth1" class="td1"><a href="http://jobsattmp.com/washington-dc/client-development/jobid3500317-digital-project-manager-interactive_web-dev-jobs" id="search_result_link_3">Digital Project Manager InteractiveWeb Dev</a>
+                </td>
+                <td headers="searchth2" class="td2">McLean, Virginia</td>
+                <td headers="searchth5" class="td4"></td>
+            </tr>
+            <tr class="alt">
+                <td headers="searchth1" class="td1"><a href="http://jobsattmp.com/new-york-state/client-development/jobid4238060-digital-project-manager-interactive_web-dev-jobs" id="search_result_link_4">Digital Project Manager InteractiveWeb Dev</a>
+                </td>
+                <td headers="searchth2" class="td2">New York, New York</td>
+                <td headers="searchth5" class="td4"></td>
+            </tr>
+            <tr>
+                <td headers="searchth1" class="td1"><a href="http://jobsattmp.com/new-york-state/it/jobid2852746-sr-software-engineer-.net-jobs" id="search_result_link_5">Sr Software Engineer .Net</a>
+                </td>
+                <td headers="searchth2" class="td2">New York, New York</td>
+                <td headers="searchth5" class="td4"></td>
+            </tr>
+            <tr class="alt">
+                <td headers="searchth1" class="td1"><a href="http://jobsattmp.com/boston/client-development/jobid4220502-account-director-digital-advertising-jobs" id="search_result_link_6">Account Director Digital Advertising</a>
+                </td>
+                <td headers="searchth2" class="td2">Waltham, Massachusetts</td>
+                <td headers="searchth5" class="td4"></td>
+            </tr>
+            <tr>
+                <td headers="searchth1" class="td1"><a href="http://jobsattmp.com/atlanta/client-development/jobid4244662-account-director-digital-advertising-jobs" id="search_result_link_7">Account Director Digital Advertising</a>
+                </td>
+                <td headers="searchth2" class="td2">Atlanta, Georgia</td>
+                <td headers="searchth5" class="td4"></td>
+            </tr>
+            <tr class="alt">
+                <td headers="searchth1" class="td1"><a href="http://jobsattmp.com/ca/toronto/client-development/jobid3821926-advertising-account-director-bilingual-jobs" id="search_result_link_8">Advertising Account Director Bilingual</a>
+                </td>
+                <td headers="searchth2" class="td2">Toronto, ON</td>
+                <td headers="searchth5" class="td4"></td>
+            </tr>
+            <tr>
+                <td headers="searchth1" class="td1"><a href="http://jobsattmp.com/boston/client-development/jobid4299084-account-executive-digital-advertising-jobs" id="search_result_link_9">Account Executive Digital Advertising</a>
+                </td>
+                <td headers="searchth2" class="td2">Waltham, Massachusetts</td>
+                <td headers="searchth5" class="td4"></td>
+            </tr>
+            <tr class="alt">
+                <td headers="searchth1" class="td1"><a href="http://jobsattmp.com/seattle/client-development/jobid4191225-account-executive-digital-advertising-jobs" id="search_result_link_10">Account Executive Digital Advertising</a>
+                </td>
+                <td headers="searchth2" class="td2">Seattle, Washington</td>
+                <td headers="searchth5" class="td4"></td>
+            </tr>
+            <tr>
+                <td headers="searchth1" class="td1"><a href="http://jobsattmp.com/san-francisco/client-development/jobid4211948-client-strategist-digital-advertising-jobs" id="search_result_link_11">Client Strategist Digital Advertising</a>
+                </td>
+                <td headers="searchth2" class="td2">San Francisco, California</td>
+                <td headers="searchth5" class="td4"></td>
+            </tr>
+            <tr class="alt">
+                <td headers="searchth1" class="td1"><a href="http://jobsattmp.com/new-york-state/client-development/jobid4260688-client-strategist-digital-advertising-jobs" id="search_result_link_12">Client Strategist Digital Advertising</a>
+                </td>
+                <td headers="searchth2" class="td2">New York, New York</td>
+                <td headers="searchth5" class="td4"></td>
+            </tr>
+            <tr>
+                <td headers="searchth1" class="td1"><a href="http://jobsattmp.com/new-york-state/client-development/jobid2501355-account-director-digital-advertising-jobs" id="search_result_link_13">Account Director Digital Advertising</a>
+                </td>
+                <td headers="searchth2" class="td2">New York, New York</td>
+                <td headers="searchth5" class="td4"></td>
+            </tr>
+            <tr class="alt">
+                <td headers="searchth1" class="td1"><a href="http://jobsattmp.com/new-york-state/other/jobid4238061-network-engineer-information-security-jobs" id="search_result_link_14">Network Engineer Information Security</a>
+                </td>
+                <td headers="searchth2" class="td2">New York, New York</td>
+                <td headers="searchth5" class="td4"></td>
+            </tr>
+            <tr>
+                <td headers="searchth1" class="td1"><a href="http://jobsattmp.com/in/india/media/jobid2438790-media-strategist_account-manager-&ndash;-tmp-india-jobs" id="search_result_link_15">Media StrategistAccount Manager &ndash; TMP India</a>
+                </td>
+                <td headers="searchth2" class="td2">Bangalore</td>
+                <td headers="searchth5" class="td4"></td>
+            </tr>
+            <tr class="alt">
+                <td headers="searchth1" class="td1"><a href="http://jobsattmp.com/new-york-state/digital/jobid4178475-digital-marketing-strategist-jobs" id="search_result_link_16">Digital Marketing Strategist</a>
+                </td>
+                <td headers="searchth2" class="td2">New York, New York</td>
+                <td headers="searchth5" class="td4"></td>
+            </tr>
+            <tr>
+                <td headers="searchth1" class="td1"><a href="http://jobsattmp.com/new-york-state/creative/jobid4254108-creative-director-nyc-jobs" id="search_result_link_17">Creative Director NYC</a>
+                </td>
+                <td headers="searchth2" class="td2">New York, New York</td>
+                <td headers="searchth5" class="td4"></td>
+            </tr>
+            <tr class="alt">
+                <td headers="searchth1" class="td1"><a href="http://jobsattmp.com/chicago/creative/jobid4254109-creative-director-chicago-jobs" id="search_result_link_18">Creative Director Chicago</a>
+                </td>
+                <td headers="searchth2" class="td2">Chicago, Illinois</td>
+                <td headers="searchth5" class="td4"></td>
+            </tr>
+            <tr>
+                <td headers="searchth1" class="td1"><a href="http://jobsattmp.com/san-francisco/creative/jobid4254110-creative-director-san-francisco-jobs" id="search_result_link_19">Creative Director San Francisco</a>
+                </td>
+                <td headers="searchth2" class="td2">San Francisco, California</td>
+                <td headers="searchth5" class="td4"></td>
+            </tr>
+            <tr class="alt">
+                <td headers="searchth1" class="td1"><a href="http://jobsattmp.com/washington-dc/creative/jobid4148969-sr-copywriter-jobs" id="search_result_link_20">Sr Copywriter</a>
+                </td>
+                <td headers="searchth2" class="td2">McLean, Virginia</td>
+                <td headers="searchth5" class="td4"></td>
+            </tr>
+        </tbody>
+    </table>
+    <div id="numberedPagination">
+        <span class="numberedCurrent">PAGE 1 OF 3</span>
+        <span class="numberedDivider">|</span>
+        <strong>1</strong><a href="javascript:Paging('http://jobsattmp.com/searches.aspx?keyword=developer', '2', 'True', 'False');">2</a>  <a href="javascript:Paging('http://jobsattmp.com/searches.aspx?keyword=developer', '3', 'True', 'False');">3</a>  <a class="numberedNext" href="javascript:Paging('http://jobsattmp.com/searches.aspx?keyword=developer', '2', 'True', 'False');" id="search_result_next_page_link">Next page</a> 
+    </div>
+</div>

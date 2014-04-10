@@ -1,0 +1,262 @@
+<div class="keywordWrapper">
+    <label class="lblASKeywords" for="txtASKeywords">Enter Search Terms...</label>
+    <span id="lblASKeywords">
+        <input name="txtASKeywords" id="txtASKeywords" class="input_text" type="text" value="Enter Search Terms..." maxlength="500" onfocus="if(this.value == 'Enter Search Terms...'){this.value = '';}" onblur="if(this.value == ''){this.value = 'Enter Search Terms...';}" onkeydown="if(event.which || event.keyCode){if ((event.which == 13) || (event.keyCode == 13)){ToAdvanceSearchResult('syngenta.tmpseoqa.com','Enter Search Terms...','search','To use search please enter 2 or more letters.',true);return false;}}" />
+    </span>
+</div>
+<input name="PRN_Replace_hidden_advsearch" id="PRN_Replace_hidden_advsearch" type="hidden" runat="server" value="0" />
+<input name="hdntxtASKeywords" type="hidden" style="display: none;" id="hdntxtASKeywords" value="Enter Search Terms..." />
+<input name="hdnAdvsearchLable" type="hidden" style="display: none;" id="hdnAdvsearchLable" value="advanced search" />
+<input name="hdnSearchTermValue" type="hidden" style="display: none;" id="hdnSearchTermValue" value="Enter Search Terms..." />
+<div class="fieldWrapper">
+    <label id="lblASCategory" for="ddlASCategory">Category</label>
+    <select id="ddlASCategory" name="ddlASCategory" class="ddl" onkeydown="if(event.which || event.keyCode){if ((event.which == 13) || (event.keyCode == 13)){ToAdvanceSearchResult('syngenta.tmpseoqa.com','Enter Search Terms...','search','To use search please enter 2 or more letters.',true);return false;}}">
+        <option id="search_Categorypulldown_item_select" value="-1">
+            <--- select --->
+        </option>
+        <option id="search_Categorypulldown_item_1" value="Agronomy">Agronomy</option>
+        <option id="search_Categorypulldown_item_2" value="Analysts">Analysts</option>
+        <option id="search_Categorypulldown_item_3" value="Chemistry">Chemistry</option>
+        <option id="search_Categorypulldown_item_4" value="Coordinator">Coordinator</option>
+        <option id="search_Categorypulldown_item_5" value="Corn and Soy">Corn and Soy</option>
+        <option id="search_Categorypulldown_item_6" value="Crop Protection">Crop Protection</option>
+        <option id="search_Categorypulldown_item_7" value="Customer Service">Customer Service</option>
+        <option id="search_Categorypulldown_item_8" value="Development">Development</option>
+        <option id="search_Categorypulldown_item_9" value="Developmental Sales">Developmental Sales</option>
+        <option id="search_Categorypulldown_item_10" value="Diversity">Diversity</option>
+        <option id="search_Categorypulldown_item_11" value="Engineering">Engineering</option>
+        <option id="search_Categorypulldown_item_12" value="Experienced Level">Experienced Level</option>
+        <option id="search_Categorypulldown_item_13" value="Finance">Finance</option>
+        <option id="search_Categorypulldown_item_14" value="Financial Analyst">Financial Analyst</option>
+        <option id="search_Categorypulldown_item_15" value="Flowers">Flowers</option>
+        <option id="search_Categorypulldown_item_16" value="Formulation Chemist">Formulation Chemist</option>
+        <option id="search_Categorypulldown_item_17" value="General & Administration">General & Administration</option>
+        <option id="search_Categorypulldown_item_18" value="Internships">Internships</option>
+        <option id="search_Categorypulldown_item_19" value="Legal">Legal</option>
+        <option id="search_Categorypulldown_item_20" value="Licensing">Licensing</option>
+        <option id="search_Categorypulldown_item_21" value="Marketing">Marketing</option>
+        <option id="search_Categorypulldown_item_22" value="Plant Scientist">Plant Scientist</option>
+        <option id="search_Categorypulldown_item_23" value="Regulatory Affairs">Regulatory Affairs</option>
+        <option id="search_Categorypulldown_item_24" value="Research">Research</option>
+        <option id="search_Categorypulldown_item_25" value="Sales">Sales</option>
+        <option id="search_Categorypulldown_item_26" value="Science">Science</option>
+        <option id="search_Categorypulldown_item_27" value="Scientist">Scientist</option>
+        <option id="search_Categorypulldown_item_28" value="Seeds">Seeds</option>
+        <option id="search_Categorypulldown_item_29" value="Supply Chain">Supply Chain</option>
+        <option id="search_Categorypulldown_item_30" value="Supply Technician">Supply Technician</option>
+        <option id="search_Categorypulldown_item_31" value="Vegetables">Vegetables</option>
+    </select>
+</div>
+<input name="hdnValueForLanguageDropDownList" type="text" style="display: none;" id="hdnValueForLanguageDropDownList" value="<--- select --->" />
+<input name="hdnASCategory" type="hidden" style="display: none;" id="hdnASCategory" value="" />
+<div class="fieldWrapper">
+    <label id="lblASPostedDate" for="ddlASPostedDate">Posted Within</label>
+    <select id="ddlASPostedDate" name="ddlASPostedDate" class="ddl" onkeydown="if(event.which || event.keyCode){if ((event.which == 13) || (event.keyCode == 13)){ToAdvanceSearchResult('syngenta.tmpseoqa.com','Enter Search Terms...','search','To use search please enter 2 or more letters.',true);return false;}}">
+        <option id="search_PostedDatepulldown_item_select" value="-1">
+            <--- select --->
+        </option>
+        <option id="search_PostedDatepulldown_item_1" value="30">Last 30 Days</option>
+        <option id="search_PostedDatepulldown_item_2" value="60">Last 60 Days</option>
+        <option id="search_PostedDatepulldown_item_3" value="90">Last 90 Days</option>
+        <option id="search_PostedDatepulldown_item_4" value="0">All</option>
+    </select>
+</div>
+<input name="hdnASPostedDate" type="hidden" style="display: none;" id="hdnASPostedDate" value="" />
+<div class="fieldWrapper">
+    <label id="lblASCountry" for="ddlASCountry">Country</label>
+    <select id="ddlASCountry" name="ddlASCountry" class="ddl" onchange="javascript:setStates();" onkeydown="if(event.which || event.keyCode){if ((event.which == 13) || (event.keyCode == 13)){ToAdvanceSearchResult('syngenta.tmpseoqa.com','Enter Search Terms...','search','To use search please enter 2 or more letters.',true);return false;}}">
+        <option id="search_Countrypulldown_item_select" value="-1">
+            <--- select --->
+        </option>
+        <option id="search_Countrypulldown_item_1" value="Mexico">Mexico</option>
+        <option id="search_Countrypulldown_item_2" value="USA">USA</option>
+    </select>
+</div>
+<input name="hdnASCountry" type="hidden" style="display: none;" id="hdnASCountry" value="" />
+<div class="fieldWrapper">
+    <label id="lblASState" for="ddlASState">State/Province</label>
+    <select id="ddlASState" name="ddlASState" class="ddl" onchange="javascript:setCities();" onkeydown="if(event.which || event.keyCode){if ((event.which == 13) || (event.keyCode == 13)){ToAdvanceSearchResult('syngenta.tmpseoqa.com','Enter Search Terms...','search','To use search please enter 2 or more letters.',true);return false;}}">
+        <option id="search_Statepulldown_item_select" value="-1">
+            <--- select --->
+        </option>
+        <option id="search_Statepulldown_item_1" value="California">California</option>
+        <option id="search_Statepulldown_item_2" value="Colorado">Colorado</option>
+        <option id="search_Statepulldown_item_3" value="District Of Columbia">District Of Columbia</option>
+        <option id="search_Statepulldown_item_4" value="Florida">Florida</option>
+        <option id="search_Statepulldown_item_5" value="Georgia">Georgia</option>
+        <option id="search_Statepulldown_item_6" value="Hawaii">Hawaii</option>
+        <option id="search_Statepulldown_item_7" value="Illinois">Illinois</option>
+        <option id="search_Statepulldown_item_8" value="Indiana">Indiana</option>
+        <option id="search_Statepulldown_item_9" value="Iowa">Iowa</option>
+        <option id="search_Statepulldown_item_10" value="Kansas">Kansas</option>
+        <option id="search_Statepulldown_item_11" value="Louisiana">Louisiana</option>
+        <option id="search_Statepulldown_item_12" value="Minnesota">Minnesota</option>
+        <option id="search_Statepulldown_item_13" value="Missouri">Missouri</option>
+        <option id="search_Statepulldown_item_14" value="Nebraska">Nebraska</option>
+        <option id="search_Statepulldown_item_15" value="New Jersey">New Jersey</option>
+        <option id="search_Statepulldown_item_16" value="North Carolina">North Carolina</option>
+        <option id="search_Statepulldown_item_17" value="Oregon">Oregon</option>
+        <option id="search_Statepulldown_item_18" value="Pennsylvania">Pennsylvania</option>
+        <option id="search_Statepulldown_item_19" value="Puerto Rico">Puerto Rico</option>
+        <option id="search_Statepulldown_item_20" value="SIN">SIN</option>
+        <option id="search_Statepulldown_item_21" value="Texas">Texas</option>
+        <option id="search_Statepulldown_item_22" value="Washington">Washington</option>
+        <option id="search_Statepulldown_item_23" value="Wisconsin">Wisconsin</option>
+    </select>
+</div>
+<input name="hdnASState" type="hidden" style="display: none;" id="hdnASState" value="" />
+<div class="fieldWrapper">
+    <label id="lblASCity" for="ddlASCity">City</label>
+    <select id="ddlASCity" name="ddlASCity" class="ddl" onkeydown="if(event.which || event.keyCode){if ((event.which == 13) || (event.keyCode == 13)){ToAdvanceSearchResult('syngenta.tmpseoqa.com','Enter Search Terms...','search','To use search please enter 2 or more letters.',true);return false;}}">
+        <option id="search_Citypulldown_item_select" value="-1">
+            <--- select --->
+        </option>
+        <option id="search_Citypulldown_item_1" value="Ames">Ames</option>
+        <option id="search_Citypulldown_item_2" value="Atlanta">Atlanta</option>
+        <option id="search_Citypulldown_item_3" value="Cheney">Cheney</option>
+        <option id="search_Citypulldown_item_4" value="Chillicothe">Chillicothe</option>
+        <option id="search_Citypulldown_item_5" value="Culiacán">Culiacán</option>
+        <option id="search_Citypulldown_item_6" value="Gilroy">Gilroy</option>
+        <option id="search_Citypulldown_item_7" value="Greensboro">Greensboro</option>
+        <option id="search_Citypulldown_item_8" value="Houston">Houston</option>
+        <option id="search_Citypulldown_item_9" value="Indianapolis">Indianapolis</option>
+        <option id="search_Citypulldown_item_10" value="Iroquois">Iroquois</option>
+        <option id="search_Citypulldown_item_11" value="Kansas City">Kansas City</option>
+        <option id="search_Citypulldown_item_12" value="Kekaha">Kekaha</option>
+        <option id="search_Citypulldown_item_13" value="Lisle">Lisle</option>
+        <option id="search_Citypulldown_item_14" value="Litchfield">Litchfield</option>
+        <option id="search_Citypulldown_item_15" value="Lone Tree">Lone Tree</option>
+        <option id="search_Citypulldown_item_16" value="Longmont">Longmont</option>
+        <option id="search_Citypulldown_item_17" value="Madison">Madison</option>
+        <option id="search_Citypulldown_item_18" value="Minnetonka">Minnetonka</option>
+        <option id="search_Citypulldown_item_19" value="Northern">Northern</option>
+        <option id="search_Citypulldown_item_20" value="Nyssa">Nyssa</option>
+        <option id="search_Citypulldown_item_21" value="Omaha">Omaha</option>
+        <option id="search_Citypulldown_item_22" value="Paris">Paris</option>
+        <option id="search_Citypulldown_item_23" value="Pasco">Pasco</option>
+        <option id="search_Citypulldown_item_24" value="Philadelphia">Philadelphia</option>
+        <option id="search_Citypulldown_item_25" value="Research Triangle Park">Research Triangle Park</option>
+        <option id="search_Citypulldown_item_26" value="Saint Gabriel">Saint Gabriel</option>
+        <option id="search_Citypulldown_item_27" value="Slater">Slater</option>
+        <option id="search_Citypulldown_item_28" value="South Bend">South Bend</option>
+        <option id="search_Citypulldown_item_29" value="Vero Beach">Vero Beach</option>
+        <option id="search_Citypulldown_item_30" value="Waimea">Waimea</option>
+        <option id="search_Citypulldown_item_31" value="Washington">Washington</option>
+        <option id="search_Citypulldown_item_32" value="Waterloo">Waterloo</option>
+        <option id="search_Citypulldown_item_33" value="Woodland">Woodland</option>
+    </select>
+</div>
+<input name="hdnASCity" type="hidden" style="display: none;" id="hdnASCity" value="" />
+<div class="fieldWrapper">
+    <label id="lblASCompanyName" for="ddlASCompanyName">Company Name/Facility</label>
+    <select id="ddlASCompanyName" name="ddlASCompanyName" class="ddl" onkeydown="if(event.which || event.keyCode){if ((event.which == 13) || (event.keyCode == 13)){ToAdvanceSearchResult('syngenta.tmpseoqa.com','Enter Search Terms...','search','To use search please enter 2 or more letters.',true);return false;}}">
+        <option id="search_CompanyNamepulldown_item_select" value="-1">
+            <--- select --->
+        </option>
+    </select>
+</div>
+<input name="hdnASCompanyName" type="hidden" style="display: none;" id="hdnASCompanyName" value="" />
+<!--Commented for BERT 5568-->
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
+<!--<script type="text/javascript" src="http://jquery-blog-js.googlecode.com/files/SetCase.js"></script>-->
+<script type="text/javascript">
+$(document).ready(function() {
+    function liveSafe(selector, events, handler) {
+        if ($().live) $(selector).live(events, handler);
+        else $(document).on(events, selector, handler);
+    }
+    $(function() {
+        if ($('#rdBtnRadius').attr("checked") == true) {
+            $("#lblASCountry").hide("slow");
+            $("#ddlASCountry").hide("slow");
+            $("#lblASState").hide("slow");
+            $("#ddlASState").hide("slow");
+            $("#lblASCity").hide("slow");
+            $("#ddlASCity").hide("slow");
+            $("#lblASLocations").hide("slow");
+            $("#ddlASLocations").hide("slow");
+            $(".RadiusSearchContainer").show("slow");
+        }
+    });
+    var autoCompleteOpen = false;
+    var itemSelected = false;
+    liveSafe('#rdBtnLocation', 'click', function() {
+        $(".RadiusSearchContainer").hide("slow");
+        $("#lblASCountry").show("slow");
+        $("#ddlASCountry").show("slow");
+        $("#lblASState").show("slow");
+        $("#ddlASState").show("slow");
+        $("#lblASCity").show("slow");
+        $("#ddlASCity").show("slow");
+        $("#lblASLocations").show("slow");
+        $("#ddlASLocations").show("slow");
+    });
+    liveSafe('#rdBtnRadius', 'click', function() {
+        $("#lblASCountry").hide("slow");
+        $("#ddlASCountry").hide("slow");
+        $("#lblASState").hide("slow");
+        $("#ddlASState").hide("slow");
+        $("#lblASCity").hide("slow");
+        $("#ddlASCity").hide("slow");
+        $("#lblASLocations").hide("slow");
+        $("#ddlASLocations").hide("slow");
+        $(".RadiusSearchContainer").show("slow");
+    });
+    $(".RadiusSearchContainer").hide();
+    if ($("#rdBtnLocation").is(":checked")) {
+        $("#rdBtnLocation").trigger('click');
+    } else if ($("#rdBtnRadius").is(":checked")) {
+        $("#rdBtnRadius").trigger('click');
+    }
+});
+
+function CheckSpecialChar(evt) {
+    evt = (evt) ? evt : event;
+    var charCode = (evt.charCode) ? evt.charCode : ((evt.keyCode) ? evt.keyCode : ((evt.which) ? evt.which : 0));
+    if (charCode != 92 && charCode != 39) {
+        return true;
+    } else {
+        return false;
+    }
+}
+</script>
+<div class="RadiusSearch">
+    <div>
+        <span>Search By</span>
+    </div>
+    <div>
+        <input class="rdBtnRadiusClass" runat="server" type="radio" name="radiusLocation" id="rdBtnRadius" value="Radius" />Radius
+        <input class="rdBtnLocationClass" checked="true" runat="server" type="radio" name="radiusLocation" id="rdBtnLocation" value="Location" />Location</div>
+</div>
+<div class="RadiusSearchContainer">
+    <input id="hdnDefaultORMaxDistanceValue" value="40" type="hidden" />
+    <!--Radius Search SOLR Migration-->
+    <div class="SearchDistanceContainer">
+        <span class="maxDistance">Maximum Distance
+            <label id="lblDistanceType" class="lblDistanceType" title="Miles">Miles</label>
+        </span>
+        <select class="radiusList" id="ddlRadiusMiles" runat="server" onkeydown="if(event.which || event.keyCode){if ((event.which == 13) || (event.keyCode == 13)){ToAdvanceSearchResult('syngenta.tmpseoqa.com','Enter Search Terms...','search','To use search please enter 2 or more letters.',true);return false;}}">
+            <option id="radius_search_distance_item_select" value="-1">--Select--</option>
+            <option id="radius_search_distance_item_1" value="5">5</option>
+            <option id="radius_search_distance_item_2" value="10">10</option>
+            <option id="radius_search_distance_item_3" value="20">20</option>
+            <option id="radius_search_distance_item_4" value="40">40</option>
+        </select>
+        <!--Radius Search S5-US4-->
+        <select class="ddlDistanceType" id="ddlDistanceType" runat="server" onkeydown="if(event.which || event.keyCode){if ((event.which == 13) || (event.keyCode == 13)){ToAdvanceSearchResult('syngenta.tmpseoqa.com','Enter Search Terms...','search','To use search please enter 2 or more letters.',true);return false;}}" style="display:none;"></select>
+    </div>
+    <div class="enterZipContainer">
+        <span class="enterZip">Enter Zip Code or City, State</span>
+    </div>
+    <div class="zipInputContainer">
+        <input class="txtCityStateRadius" runat="server" type="text" id="txtCityStateZip" onkeypress="return CheckSpecialChar(event);" style=" width:300px" onkeydown="if(event.which || event.keyCode){if ((event.which == 13) || (event.keyCode == 13)){ToAdvanceSearchResult('syngenta.tmpseoqa.com','Enter Search Terms...','search','To use search please enter 2 or more letters.',true);return false;}}" />
+        <!--<input class="txtCityStateRadius1" runat="server"  type="text" id="txtPlainText" style=" width:300px;color:Gray" value="Please type in City,State or ZipCode" />-->
+    </div>
+    <!--<div><span id="errorMessageZipState" style=" display:none; color:red">##errorMessage##</span></div>--></div>
+<div>
+    <input type="hidden" name="hdnLatitude" id="hdnLatitude" />
+    <input type="hidden" name="hdnLongitude" id="hdnLongitude" />
+</div>
+<input value="GO" id="btnASGo" class="input_submit button_go" type="button" onclick="ToAdvanceSearchResult('syngenta.tmpseoqa.com','Enter Search Terms...','search','To use search please enter 2 or more letters.',true);" />
+</div>

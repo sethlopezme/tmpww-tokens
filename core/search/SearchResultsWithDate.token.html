@@ -1,0 +1,174 @@
+<div id="conteinerForSearchResults">
+    <table class="tableSearchResults">
+        <caption class="wai-aria">List of search results for developer.</caption>
+        <tbody>
+            <tr>
+                <input type="hidden" runat="server/" value="filter by job title" id="hdnFilterTitle">
+                <input type="hidden" runat="server/" value="filter by job location" id="hdnFilterLocation">
+                <input type="hidden" value="asc" id="hdnTitleSortDirection">
+                <input type="hidden" value="asc" id="hdnLocationSortDirection">
+                <input type="hidden" value="500" id="hdnSearchResultCount">
+                <input type="hidden" value="Maximum results shown. Add additional keywords to further filter down your search." id="hdnmaximumSearchResult">
+                <th id="searchth1" class="thJobTitle"><a href="javascript:SortResults('http://dell.tmpseoqa.com/search/developer/ASCategory/-1/ASPostedDate/-1/ASCountry/-1/ASState/-1/ASCity/-1/ASLocation/-1/ASCompanyName/-1/ASCustom1/-1/ASCustom2/-1/ASCustom3/-1/ASCustom4/-1/ASCustom5/-1/ASIsRadius/false/ASCityStateZipcode/-1/ASDistance/-1/ASLatitude/-1/ASLongitude/-1/ASDistanceType/-1','title')" runat="server" id="Title" onclick="var x=&quot;.tl(&quot;;s_objectID=&quot;javascript:SortResults('http://dell.tmpseoqa.com/search/developer/ASCategory/-1/ASPostedDate/-1/A_1&quot;;return this.s_oc?this.s_oc(e):true">Job Title</a>
+                </th>
+                <th id="searchth2" class="thLocations"><a runat="server" href="javascript:SortResults('http://dell.tmpseoqa.com/search/developer/ASCategory/-1/ASPostedDate/-1/ASCountry/-1/ASState/-1/ASCity/-1/ASLocation/-1/ASCompanyName/-1/ASCustom1/-1/ASCustom2/-1/ASCustom3/-1/ASCustom4/-1/ASCustom5/-1/ASIsRadius/false/ASCityStateZipcode/-1/ASDistance/-1/ASLatitude/-1/ASLongitude/-1/ASDistanceType/-1','location')" onclick="var x=&quot;.tl(&quot;;s_objectID=&quot;javascript:SortResults('http://dell.tmpseoqa.com/search/developer/ASCategory/-1/ASPostedDate/-1/A_2&quot;;return this.s_oc?this.s_oc(e):true">Location</a>
+                </th>
+                <th id="searchth3" class="thDate">Date</th>
+                <th id="searchth5" class="thLast"></th>
+            </tr>
+            <tr class="trFilterResults">
+                <td headers="searchth1" class="td1">
+                    <label class="wai-aria" for="jobTitleKeyword">Job Title</label>
+                    <input type="text" onkeydown="if(event.which || event.keyCode){if ((event.which == 13) || (event.keyCode == 13)) {filterResultsEvent=true;OnGo('http://dell.tmpseoqa.com/searches.aspx?keyword=developer&amp;ISAdvanceSearch=True&amp;ASCategory=-1&amp;ASPostedDate=-1&amp;ASCountry=-1&amp;ASState=-1&amp;ASCity=-1&amp;ASCompanyName=-1&amp;ASCustom1=-1&amp;ASCustom2=-1&amp;ASCustom3=-1&amp;ASCustom4=-1&amp;ASCustom5=-1&amp;ASIsRadius=False&amp;ASCityStateZipcode=-1&amp;ASDistance=-1&amp;ASLatitude=-1&amp;ASLongitude=-1&amp;ASDistanceType=-1','True','True');return false;}}" onblur="if(this.value == ''){this.value = 'filter by job title';}" onfocus="if(this.value == 'filter by job title'){this.value = '';}" maxlength="200" value="filter by job title" id="jobTitleKeyword">
+                </td>
+                <td headers="searchth2" class="td2">
+                    <label class="wai-aria" for="locationsKeyword">Location</label>
+                    <input type="text" onkeydown="if(event.which || event.keyCode){if ((event.which == 13) || (event.keyCode == 13)) {filterResultsEvent=true;OnGo('http://dell.tmpseoqa.com/searches.aspx?keyword=developer&amp;ISAdvanceSearch=True&amp;ASCategory=-1&amp;ASPostedDate=-1&amp;ASCountry=-1&amp;ASState=-1&amp;ASCity=-1&amp;ASCompanyName=-1&amp;ASCustom1=-1&amp;ASCustom2=-1&amp;ASCustom3=-1&amp;ASCustom4=-1&amp;ASCustom5=-1&amp;ASIsRadius=False&amp;ASCityStateZipcode=-1&amp;ASDistance=-1&amp;ASLatitude=-1&amp;ASLongitude=-1&amp;ASDistanceType=-1','True','True');return false;}}" onblur="if(this.value == ''){this.value = 'filter by job location';}" onfocus="if(this.value == 'filter by job location'){this.value = '';}" maxlength="200" value="filter by job location" id="locationsKeyword">
+                </td>
+                <td headers="searchth3" class="td3"></td>
+                <td headers="searchth5" class="td4"><a href="javascript:OnGo('http://dell.tmpseoqa.com/searches.aspx?keyword=developer&amp;ISAdvanceSearch=True&amp;ASCategory=-1&amp;ASPostedDate=-1&amp;ASCountry=-1&amp;ASState=-1&amp;ASCity=-1&amp;ASCompanyName=-1&amp;ASCustom1=-1&amp;ASCustom2=-1&amp;ASCustom3=-1&amp;ASCustom4=-1&amp;ASCustom5=-1&amp;ASIsRadius=False&amp;ASCityStateZipcode=-1&amp;ASDistance=-1&amp;ASLatitude=-1&amp;ASLongitude=-1&amp;ASDistanceType=-1', 'True', 'True');" onclick="var x=&quot;.tl(&quot;;s_objectID=&quot;javascript:OnGo('http://dell.tmpseoqa.com/searches.aspx?keyword=developer&amp;ISAdvanceSearch=True&amp;AS_1&quot;;return this.s_oc?this.s_oc(e):true" id="btGo">Go</a><a href="javascript:Reset('http://dell.tmpseoqa.com/searches.aspx?keyword=developer&amp;ISAdvanceSearch=True&amp;ASCategory=-1&amp;ASPostedDate=-1&amp;ASCountry=-1&amp;ASState=-1&amp;ASCity=-1&amp;ASCompanyName=-1&amp;ASCustom1=-1&amp;ASCustom2=-1&amp;ASCustom3=-1&amp;ASCustom4=-1&amp;ASCustom5=-1&amp;ASIsRadius=False&amp;ASCityStateZipcode=-1&amp;ASDistance=-1&amp;ASLatitude=-1&amp;ASLongitude=-1&amp;ASDistanceType=-1', 'True', 'True');" id="btReset" onclick="var x=&quot;.tl(&quot;;s_objectID=&quot;javascript:Reset('http://dell.tmpseoqa.com/searches.aspx?keyword=developer&amp;ISAdvanceSearch=True&amp;A_1&quot;;return this.s_oc?this.s_oc(e):true">Reset</a>
+                </td>
+            </tr>
+            <tr>
+                <td headers="searchth1" class="td1"><a href="http://dell.tmpseoqa.com/sg/singapore/engineering/jobid4126220-tibco-developer-jobs" id="search_result_link_1" onclick="var x=&quot;.tl(&quot;;s_objectID=&quot;http://dell.tmpseoqa.com/sg/singapore/engineering/jobid4126220-tibco-developer-jobs_1&quot;;return this.s_oc?this.s_oc(e):true">Tibco Developer</a>
+                </td>
+                <td headers="searchth2" class="td2">Singapore, Singapore, Singapore</td>
+                <td headers="searchth3" class="td3">08/28/2013</td>
+                <td headers="searchth5" class="td4"></td>
+            </tr>
+            <tr class="alt">
+                <td headers="searchth1" class="td1"><a href="http://dell.tmpseoqa.com/virginia/information-technology/jobid4137752-.net-developer-jobs" id="search_result_link_2" onclick="var x=&quot;.tl(&quot;;s_objectID=&quot;http://dell.tmpseoqa.com/virginia/information-technology/jobid4137752-.net-developer-jobs_1&quot;;return this.s_oc?this.s_oc(e):true">.Net Developer</a>
+                </td>
+                <td headers="searchth2" class="td2">Fairfx Willw Oks, Virginia</td>
+                <td headers="searchth3" class="td3">09/02/2013</td>
+                <td headers="searchth5" class="td4"></td>
+            </tr>
+            <tr>
+                <td headers="searchth1" class="td1"><a href="http://dell.tmpseoqa.com/virginia/information-technology/jobid4137753-.net-developer-jobs" id="search_result_link_3" onclick="var x=&quot;.tl(&quot;;s_objectID=&quot;http://dell.tmpseoqa.com/virginia/information-technology/jobid4137753-.net-developer-jobs_1&quot;;return this.s_oc?this.s_oc(e):true">.Net Developer</a>
+                </td>
+                <td headers="searchth2" class="td2">Fairfx Willw Oks, Virginia</td>
+                <td headers="searchth3" class="td3">09/02/2013</td>
+                <td headers="searchth5" class="td4"></td>
+            </tr>
+            <tr class="alt">
+                <td headers="searchth1" class="td1"><a href="http://dell.tmpseoqa.com/north-bay/information-technology/jobid4111011-web-developer-jobs" id="search_result_link_4" onclick="var x=&quot;.tl(&quot;;s_objectID=&quot;http://dell.tmpseoqa.com/north-bay/information-technology/jobid4111011-web-developer-jobs_1&quot;;return this.s_oc?this.s_oc(e):true">Web Developer</a>
+                </td>
+                <td headers="searchth2" class="td2">Petaluma, California</td>
+                <td headers="searchth3" class="td3">08/26/2013</td>
+                <td headers="searchth5" class="td4"></td>
+            </tr>
+            <tr>
+                <td headers="searchth1" class="td1"><a href="http://dell.tmpseoqa.com/north-bay/information-technology/jobid4032213-web-developer-jobs" id="search_result_link_5" onclick="var x=&quot;.tl(&quot;;s_objectID=&quot;http://dell.tmpseoqa.com/north-bay/information-technology/jobid4032213-web-developer-jobs_1&quot;;return this.s_oc?this.s_oc(e):true">Web Developer</a>
+                </td>
+                <td headers="searchth2" class="td2">Petaluma, California</td>
+                <td headers="searchth3" class="td3">08/08/2013</td>
+                <td headers="searchth5" class="td4"></td>
+            </tr>
+            <tr class="alt">
+                <td headers="searchth1" class="td1"><a href="http://dell.tmpseoqa.com/texas/engineering/jobid4220414-software-engineer-android-developer-windows-app-developer-jobs" id="search_result_link_6" onclick="var x=&quot;.tl(&quot;;s_objectID=&quot;http://dell.tmpseoqa.com/texas/engineering/jobid4220414-software-engineer-android-developer-windo_1&quot;;return this.s_oc?this.s_oc(e):true">Software Engineer Android Developer Windows App Developer</a>
+                </td>
+                <td headers="searchth2" class="td2">Dallas, Texas</td>
+                <td headers="searchth3" class="td3">09/18/2013</td>
+                <td headers="searchth5" class="td4"></td>
+            </tr>
+            <tr>
+                <td headers="searchth1" class="td1"><a href="http://dell.tmpseoqa.com/texas/corporate-strategy/jobid4004416-corporate-development-and-strategy-director-jobs" id="search_result_link_7" onclick="var x=&quot;.tl(&quot;;s_objectID=&quot;http://dell.tmpseoqa.com/texas/corporate-strategy/jobid4004416-corporate-development-and-strategy_1&quot;;return this.s_oc?this.s_oc(e):true">Corporate Development and Strategy Director</a>
+                </td>
+                <td headers="searchth2" class="td2">Austin, Texas</td>
+                <td headers="searchth3" class="td3">08/01/2013</td>
+                <td headers="searchth5" class="td4"></td>
+            </tr>
+            <tr class="alt">
+                <td headers="searchth1" class="td1"><a href="http://dell.tmpseoqa.com/round-rock/corporate-development-and-strategy-corporate-development-and-strategy-manager/jobid4270578-corp-development-and-strategy-director-jobs" id="search_result_link_8" onclick="var x=&quot;.tl(&quot;;s_objectID=&quot;http://dell.tmpseoqa.com/round-rock/corporate-development-and-strategy-corporate-development-and-_1&quot;;return this.s_oc?this.s_oc(e):true">Corp Development and Strategy Director</a>
+                </td>
+                <td headers="searchth2" class="td2">Round Rock, Texas</td>
+                <td headers="searchth3" class="td3">10/01/2013</td>
+                <td headers="searchth5" class="td4"></td>
+            </tr>
+            <tr>
+                <td headers="searchth1" class="td1"><a href="http://dell.tmpseoqa.com/round-rock/corporate-development-and-strategy-corporate-development-and-strategy-manager/jobid4270579-corp-development-and-strategy-director-jobs" id="search_result_link_9" onclick="var x=&quot;.tl(&quot;;s_objectID=&quot;http://dell.tmpseoqa.com/round-rock/corporate-development-and-strategy-corporate-development-and-_2&quot;;return this.s_oc?this.s_oc(e):true">Corp Development and Strategy Director</a>
+                </td>
+                <td headers="searchth2" class="td2">Round Rock, Texas</td>
+                <td headers="searchth3" class="td3">10/01/2013</td>
+                <td headers="searchth5" class="td4"></td>
+            </tr>
+            <tr class="alt">
+                <td headers="searchth1" class="td1"><a href="http://dell.tmpseoqa.com/sg/singapore/corporate-strategy/jobid3886255-corporate-development-and-strategy-director-jobs" id="search_result_link_10" onclick="var x=&quot;.tl(&quot;;s_objectID=&quot;http://dell.tmpseoqa.com/sg/singapore/corporate-strategy/jobid3886255-corporate-development-and-s_1&quot;;return this.s_oc?this.s_oc(e):true">Corporate Development and Strategy Director</a>
+                </td>
+                <td headers="searchth2" class="td2">Singapore, Singapore, Singapore</td>
+                <td headers="searchth3" class="td3">09/01/2013</td>
+                <td headers="searchth5" class="td4"></td>
+            </tr>
+            <tr>
+                <td headers="searchth1" class="td1"><a href="http://dell.tmpseoqa.com/texas/engineering/jobid4207162-dell-credant-ios-developer-jobs" id="search_result_link_11" onclick="var x=&quot;.tl(&quot;;s_objectID=&quot;http://dell.tmpseoqa.com/texas/engineering/jobid4207162-dell-credant-ios-developer-jobs_1&quot;;return this.s_oc?this.s_oc(e):true">Dell Credant IOS Developer</a>
+                </td>
+                <td headers="searchth2" class="td2">Addison, Texas</td>
+                <td headers="searchth3" class="td3">09/17/2013</td>
+                <td headers="searchth5" class="td4"></td>
+            </tr>
+            <tr class="alt">
+                <td headers="searchth1" class="td1"><a href="http://dell.tmpseoqa.com/texas/engineering/jobid4207161-dell-credant-android-developer-jobs" id="search_result_link_12" onclick="var x=&quot;.tl(&quot;;s_objectID=&quot;http://dell.tmpseoqa.com/texas/engineering/jobid4207161-dell-credant-android-developer-jobs_1&quot;;return this.s_oc?this.s_oc(e):true">Dell Credant Android Developer</a>
+                </td>
+                <td headers="searchth2" class="td2">Addison, Texas</td>
+                <td headers="searchth3" class="td3">09/17/2013</td>
+                <td headers="searchth5" class="td4"></td>
+            </tr>
+            <tr>
+                <td headers="searchth1" class="td1"><a href="http://dell.tmpseoqa.com/round-rock/engineering/jobid3899080-software-ui-development-engineer-jobs" id="search_result_link_13" onclick="var x=&quot;.tl(&quot;;s_objectID=&quot;http://dell.tmpseoqa.com/round-rock/engineering/jobid3899080-software-ui-development-engineer-job_1&quot;;return this.s_oc?this.s_oc(e):true">Software UI Development Engineer</a>
+                </td>
+                <td headers="searchth2" class="td2">Round Rock, Texas</td>
+                <td headers="searchth3" class="td3">07/08/2013</td>
+                <td headers="searchth5" class="td4"></td>
+            </tr>
+            <tr class="alt">
+                <td headers="searchth1" class="td1"><a href="http://dell.tmpseoqa.com/il/israel/engineering/jobid3573206-storage-development-engineer-ii-jobs" id="search_result_link_14" onclick="var x=&quot;.tl(&quot;;s_objectID=&quot;http://dell.tmpseoqa.com/il/israel/engineering/jobid3573206-storage-development-engineer-ii-jobs_1&quot;;return this.s_oc?this.s_oc(e):true">Storage Development Engineer II</a>
+                </td>
+                <td headers="searchth2" class="td2">Herzliya Pituach, Israel</td>
+                <td headers="searchth3" class="td3">04/22/2013</td>
+                <td headers="searchth5" class="td4"></td>
+            </tr>
+            <tr>
+                <td headers="searchth1" class="td1"><a href="http://dell.tmpseoqa.com/cn/beijing/engineering/jobid4203705-business-developer-i-jobs" id="search_result_link_15" onclick="var x=&quot;.tl(&quot;;s_objectID=&quot;http://dell.tmpseoqa.com/cn/beijing/engineering/jobid4203705-business-developer-i-jobs_1&quot;;return this.s_oc?this.s_oc(e):true">Business Developer I</a>
+                </td>
+                <td headers="searchth2" class="td2">Beijing, Beijing, China</td>
+                <td headers="searchth3" class="td3">09/16/2013</td>
+                <td headers="searchth5" class="td4"></td>
+            </tr>
+            <tr class="alt">
+                <td headers="searchth1" class="td1"><a href="http://dell.tmpseoqa.com/round-rock/engineering/jobid4091033-storage-development-engineer-jobs" id="search_result_link_16" onclick="var x=&quot;.tl(&quot;;s_objectID=&quot;http://dell.tmpseoqa.com/round-rock/engineering/jobid4091033-storage-development-engineer-jobs_1&quot;;return this.s_oc?this.s_oc(e):true">Storage Development Engineer</a>
+                </td>
+                <td headers="searchth2" class="td2">Round Rock, Texas</td>
+                <td headers="searchth3" class="td3">08/21/2013</td>
+                <td headers="searchth5" class="td4"></td>
+            </tr>
+            <tr>
+                <td headers="searchth1" class="td1"><a href="http://dell.tmpseoqa.com/united-states/engineering/jobid3399259-java-architect-and-developer-jobs" id="search_result_link_17" onclick="var x=&quot;.tl(&quot;;s_objectID=&quot;http://dell.tmpseoqa.com/united-states/engineering/jobid3399259-java-architect-and-developer-jobs_1&quot;;return this.s_oc?this.s_oc(e):true">Java Architect and Developer</a>
+                </td>
+                <td headers="searchth2" class="td2">Santa Clara, California</td>
+                <td headers="searchth3" class="td3">03/25/2013</td>
+                <td headers="searchth5" class="td4"></td>
+            </tr>
+            <tr class="alt">
+                <td headers="searchth1" class="td1"><a href="http://dell.tmpseoqa.com/texas/engineering/jobid4020773-dell-credant-android-developer-jobs" id="search_result_link_18" onclick="var x=&quot;.tl(&quot;;s_objectID=&quot;http://dell.tmpseoqa.com/texas/engineering/jobid4020773-dell-credant-android-developer-jobs_1&quot;;return this.s_oc?this.s_oc(e):true">Dell Credant Android Developer</a>
+                </td>
+                <td headers="searchth2" class="td2">Addison, Texas</td>
+                <td headers="searchth3" class="td3">08/06/2013</td>
+                <td headers="searchth5" class="td4"></td>
+            </tr>
+            <tr>
+                <td headers="searchth1" class="td1"><a href="http://dell.tmpseoqa.com/ro/bucharest/engineering/jobid4175476-software-development-advisor-jobs" id="search_result_link_19" onclick="var x=&quot;.tl(&quot;;s_objectID=&quot;http://dell.tmpseoqa.com/ro/bucharest/engineering/jobid4175476-software-development-advisor-jobs_1&quot;;return this.s_oc?this.s_oc(e):true">Software Development Advisor</a>
+                </td>
+                <td headers="searchth2" class="td2">Bucharest, Bucuresti, Romania</td>
+                <td headers="searchth3" class="td3">09/10/2013</td>
+                <td headers="searchth5" class="td4"></td>
+            </tr>
+            <tr class="alt">
+                <td headers="searchth1" class="td1"><a href="http://dell.tmpseoqa.com/ro/bucharest/engineering/jobid4175475-software-development-advisor-jobs" id="search_result_link_20" onclick="var x=&quot;.tl(&quot;;s_objectID=&quot;http://dell.tmpseoqa.com/ro/bucharest/engineering/jobid4175475-software-development-advisor-jobs_1&quot;;return this.s_oc?this.s_oc(e):true">Software Development Advisor</a>
+                </td>
+                <td headers="searchth2" class="td2">Bucharest, Bucuresti, Romania</td>
+                <td headers="searchth3" class="td3">09/10/2013</td>
+                <td headers="searchth5" class="td4"></td>
+            </tr>
+        </tbody>
+    </table><a class="pagination-more" href="javascript:Paging('http://dell.tmpseoqa.com/searches.aspx?keyword=developer&amp;ISAdvanceSearch=True&amp;ASCategory=-1&amp;ASPostedDate=-1&amp;ASCountry=-1&amp;ASState=-1&amp;ASCity=-1&amp;ASCompanyName=-1&amp;ASCustom1=-1&amp;ASCustom2=-1&amp;ASCustom3=-1&amp;ASCustom4=-1&amp;ASCustom5=-1&amp;ASIsRadius=False&amp;ASCityStateZipcode=-1&amp;ASDistance=-1&amp;ASLatitude=-1&amp;ASLongitude=-1&amp;ASDistanceType=-1', '2', 'True', 'True');" id="search_result_next_page_link" onclick="var x=&quot;.tl(&quot;;s_objectID=&quot;javascript:Paging('http://dell.tmpseoqa.com/searches.aspx?keyword=developer&amp;ISAdvanceSearch=True&amp;_1&quot;;return this.s_oc?this.s_oc(e):true">Next page</a>
+</div>

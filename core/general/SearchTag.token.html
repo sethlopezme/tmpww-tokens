@@ -1,0 +1,7 @@
+<label for="job_input_text">Search Jobs&nbsp;</label>
+<span id="job_input_text_bg">
+    <input type="text" onkeydown="if(event.which || event.keyCode){if ((event.which == 13) || (event.keyCode == 13)) {ToSearchResult('syngenta.tmpseoqa.com','Enter Search Terms...','search','To use search please enter 2 or more letters.',true);return false;}}" onkeyup="GoSearch('http://syngenta.tmpseoqa.com/AjaxSearchResults.aspx','Close','Searching','Found 0 matching Jobs','http://seostatic.tmp.com/job-images/throbber2.gif',false);" onblur="if(this.value == ''){this.value = 'Enter Search Terms...';}" onfocus="if(this.value == 'Enter Search Terms...'){this.value = '';}" value="Enter Search Terms..." name="job_input_text" id="job_input_text" class="input_text">
+</span>
+<input type="button" onclick="ToSearchResult('syngenta.tmpseoqa.com','Enter Search Terms...','search','To use search please enter 2 or more letters.',true);" value="Go" id="search_job_submit" class="input_submit button_go">
+<div id="searchHTML"></div>
+<input type="hidden" value="0" runat="server" id="PRN_Replace_hidden_basicsearch" name="PRN_Replace_hidden_basicsearch">
