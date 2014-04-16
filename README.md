@@ -28,6 +28,7 @@ Tokens are just normal HTML files with the extension `.token.html`. They can be 
 The tokens can be found inside the `tmpww-tokens` folder and they are split up by page-scope.
 
 ## Release History
+* 2014-04-16        v0.0.3        Added more tokens.
 * 2014-04-11        v0.0.2        Filled most tokens with sample data, and unified the file structure.
 * 2014-04-09        v0.0.1        Created `.token.html` files for all tokens available within
                                   SeoAdmin. Very few have been filled with sample data.
