@@ -156,5 +156,107 @@
     </select>
 </div>
 <input name="hdnASCompanyName" type="hidden" style="display: none;" id="hdnASCompanyName" value="" />
+<!--Commented for BERT 5568-->
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
+<!--<script type="text/javascript" src="http://jquery-blog-js.googlecode.com/files/SetCase.js"></script>-->
+<script type="text/javascript">
+$(document).ready(function() {
+    function liveSafe(selector, events, handler) {
+        if ($().live) $(selector).live(events, handler);
+        else $(document).on(events, selector, handler);
+    }
+    $(function() {
+        if ($('#rdBtnRadius').attr("checked") == true) {
+            $("#lblASCountry").hide("slow");
+            $("#ddlASCountry").hide("slow");
+            $("#lblASState").hide("slow");
+            $("#ddlASState").hide("slow");
+            $("#lblASCity").hide("slow");
+            $("#ddlASCity").hide("slow");
+            $("#lblASLocations").hide("slow");
+            $("#ddlASLocations").hide("slow");
+            $(".RadiusSearchContainer").show("slow");
+        }
+    });
+    var autoCompleteOpen = false;
+    var itemSelected = false;
+    liveSafe('#rdBtnLocation', 'click', function() {
+        $(".RadiusSearchContainer").hide("slow");
+        $("#lblASCountry").show("slow");
+        $("#ddlASCountry").show("slow");
+        $("#lblASState").show("slow");
+        $("#ddlASState").show("slow");
+        $("#lblASCity").show("slow");
+        $("#ddlASCity").show("slow");
+        $("#lblASLocations").show("slow");
+        $("#ddlASLocations").show("slow");
+    });
+    liveSafe('#rdBtnRadius', 'click', function() {
+        $("#lblASCountry").hide("slow");
+        $("#ddlASCountry").hide("slow");
+        $("#lblASState").hide("slow");
+        $("#ddlASState").hide("slow");
+        $("#lblASCity").hide("slow");
+        $("#ddlASCity").hide("slow");
+        $("#lblASLocations").hide("slow");
+        $("#ddlASLocations").hide("slow");
+        $(".RadiusSearchContainer").show("slow");
+    });
+    $(".RadiusSearchContainer").hide();
+    if ($("#rdBtnLocation").is(":checked")) {
+        $("#rdBtnLocation").trigger('click');
+    } else if ($("#rdBtnRadius").is(":checked")) {
+        $("#rdBtnRadius").trigger('click');
+    }
+});
+
+function CheckSpecialChar(evt) {
+    evt = (evt) ? evt : event;
+    var charCode = (evt.charCode) ? evt.charCode : ((evt.keyCode) ? evt.keyCode : ((evt.which) ? evt.which : 0));
+    if (charCode != 92 && charCode != 39) {
+        return true;
+    } else {
+        return false;
+    }
+}
+</script>
+<div class="RadiusSearch">
+    <div>
+        <span>Search By</span>
+    </div>
+    <div>
+        <input class="rdBtnRadiusClass" runat="server" type="radio" name="radiusLocation" id="rdBtnRadius" value="Radius" />Radius
+        <input class="rdBtnLocationClass" checked="true" runat="server" type="radio" name="radiusLocation" id="rdBtnLocation" value="Location" />Location</div>
+</div>
+<div class="RadiusSearchContainer">
+    <input id="hdnDefaultORMaxDistanceValue" value="40" type="hidden" />
+    <!--Radius Search SOLR Migration-->
+    <div class="SearchDistanceContainer">
+        <span class="maxDistance">Maximum Distance
+            <label id="lblDistanceType" class="lblDistanceType" title="Miles">Miles</label>
+        </span>
+        <select class="radiusList" id="ddlRadiusMiles" runat="server" onkeydown="if(event.which || event.keyCode){if ((event.which == 13) || (event.keyCode == 13)){ToAdvanceSearchResult('syngenta.tmpseoqa.com','Enter Search Terms...','search','To use search please enter 2 or more letters.',true);return false;}}">
+            <option id="radius_search_distance_item_select" value="-1">--Select--</option>
+            <option id="radius_search_distance_item_1" value="5">5</option>
+            <option id="radius_search_distance_item_2" value="10">10</option>
+            <option id="radius_search_distance_item_3" value="20">20</option>
+            <option id="radius_search_distance_item_4" value="40">40</option>
+        </select>
+        <!--Radius Search S5-US4-->
+        <select class="ddlDistanceType" id="ddlDistanceType" runat="server" onkeydown="if(event.which || event.keyCode){if ((event.which == 13) || (event.keyCode == 13)){ToAdvanceSearchResult('syngenta.tmpseoqa.com','Enter Search Terms...','search','To use search please enter 2 or more letters.',true);return false;}}" style="display:none;"></select>
+    </div>
+    <div class="enterZipContainer">
+        <span class="enterZip">Enter Zip Code or City, State</span>
+    </div>
+    <div class="zipInputContainer">
+        <input class="txtCityStateRadius" runat="server" type="text" id="txtCityStateZip" onkeypress="return CheckSpecialChar(event);" style=" width:300px" onkeydown="if(event.which || event.keyCode){if ((event.which == 13) || (event.keyCode == 13)){ToAdvanceSearchResult('syngenta.tmpseoqa.com','Enter Search Terms...','search','To use search please enter 2 or more letters.',true);return false;}}" />
+        <!--<input class="txtCityStateRadius1" runat="server"  type="text" id="txtPlainText" style=" width:300px;color:Gray" value="Please type in City,State or ZipCode" />-->
+    </div>
+    <!--<div><span id="errorMessageZipState" style=" display:none; color:red">##errorMessage##</span></div>--></div>
+<div>
+    <input type="hidden" name="hdnLatitude" id="hdnLatitude" />
+    <input type="hidden" name="hdnLongitude" id="hdnLongitude" />
+</div>
 <input value="GO" id="btnASGo" class="input_submit button_go" type="button" onclick="ToAdvanceSearchResult('syngenta.tmpseoqa.com','Enter Search Terms...','search','To use search please enter 2 or more letters.',true);" />
 </div>
